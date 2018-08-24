@@ -1,0 +1,46 @@
+\ [[ -n $PERFECT_DEMO_ROOT ]] || die 'PERFECT_DEMO_ROOT not defined'
+
+\ PERFECT_DEMO_PROMPT="★  "
+\ PERFECT_DEMO_WAIT=2
+\ PERFECT_DEMO_PAUSE=1
+
+\ rm -fr perfect-demo
+
+\ c
+
+$# In this demo I'll show you how to make a demo like this!
+$# 
+$# You will need the Perfect Demo software. You can get it here:
+$# 
+$#    https://github.com/ingydotnet/perfect-demo
+\ sleep 3
+$# 
+$# Let's try it out!
+\ c
+
+$# First we clone it:
+$ git clone https://github.com/ingydotnet/perfect-demo
+$# Then we enable it:
+$ source perfect-demo/.rc
+\ c
+
+$# Now we edit a `.pd` file. I've made one called `cowsay.pd`
+$ cat cowsay.pd
+\ c
+
+$# Let's run the demo now.
+$ time perfect-demo cowsay.pd
+\ sleep 1
+\ c
+
+$# When it's perfect, we can record it.
+$# We need to open up another terminal and run this command:
+$ perfect-demo-recorder 5  # Length of time to record...
+\ c
+
+$# Now you should have a perfect-demo.gif file
+$ ls -l perfect-demo.gif
+\ c
+
+$# See https://github.com/ingydotnet/perfect-demo
+\ sleep 10

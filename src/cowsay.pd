@@ -1,0 +1,15 @@
+\ [[ -n $PERFECT_DEMO_ROOT ]] || die 'PERFECT_DEMO_ROOT not defined'
+
+\ PERFECT_DEMO_PROMPT="★  "
+\ PERFECT_DEMO_WAIT=0
+\ PERFECT_DEMO_PAUSE=1
+
+\ c
+\ sleep 2
+
+$# Ever tried cowsay?
+$ cowsay 'Well, hello there!'
+\ sleep 1
+\ c
+
+$ cowsay 'THE END'
